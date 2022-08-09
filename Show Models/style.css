@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --primary-color:#28b487 ;
+  --secondary-color:#7dd56f;
+}
+
+body {
+  position: relative;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background: -webkit-gradient(linear, left bottom, left top, from(var(--primary-color)), to(var(--secondary-color))) no-repeat;
+  background: linear-gradient(to top, var(--primary-color), var(--secondary-color)) no-repeat;
+  height: 100vh;
+}
+
+.buttons {
+  padding: 5rem;
+}
+.buttons button {
+  padding: 1.5rem;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  font-size: 30px;
+  margin-left: 50px;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  font-weight: bolder;
+}
+.buttons button:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.model {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  z-index: 10;
+  border-radius: 15px;
+}
+.model .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30px;
+}
+.model .title button {
+  padding: 6px 15px;
+  border: none;
+  background-color: #7dd56f;
+  border-radius: 10px;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+.model .title button:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+.model p {
+  font-size: 25px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+}
+
+.hidden {
+  display: none;
+}
